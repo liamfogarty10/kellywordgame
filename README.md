@@ -1,4 +1,4 @@
-# 🩺 Kellys Irish Nursing Crossword Game
+# 🩺 Kellys Nursing Crossword
 
 ## 🎮 Play the Game
 
