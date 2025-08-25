@@ -38,84 +38,84 @@ class CrosswordGame {
 
     createPuzzleSets() {
         return [
-            // Puzzle Set 1: General Nursing Terms
+            // Puzzle Set 1: Irish General Nursing Terms
             [
-                { id: 1, word: 'NBM', row: 2, col: 3, direction: 'across', clue: 'Abbreviation for Nil by Mouth', number: 1 },
-                { id: 2, word: 'HEPARIN', row: 4, col: 1, direction: 'across', clue: 'Common anticoagulant medication', number: 3 },
-                { id: 3, word: 'CONSCIOUSNESS', row: 1, col: 4, direction: 'down', clue: 'Glasgow Coma Scale assesses this', number: 2 },
-                { id: 4, word: 'SOAP', row: 6, col: 6, direction: 'down', clue: 'Hand hygiene acronym', number: 4 },
-                { id: 5, word: 'TPR', row: 7, col: 2, direction: 'across', clue: 'Temperature, Pulse, Respiration abbreviation', number: 5 },
-                { id: 6, word: 'MRSA', row: 9, col: 4, direction: 'across', clue: 'Methicillin-resistant Staphylococcus aureus', number: 6 },
-                { id: 7, word: 'INSULIN', row: 3, col: 8, direction: 'down', clue: 'Hormone for blood sugar control', number: 7 },
-                { id: 8, word: 'WARD', row: 11, col: 5, direction: 'across', clue: 'Hospital unit where patients stay', number: 8 },
-                { id: 9, word: 'CPAP', row: 5, col: 11, direction: 'down', clue: 'Continuous Positive Airway Pressure', number: 9 },
-                { id: 10, word: 'PAIN', row: 12, col: 1, direction: 'across', clue: 'Fifth vital sign in nursing assessment', number: 10 },
-                { id: 11, word: 'IVIG', row: 0, col: 9, direction: 'down', clue: 'Intravenous immunoglobulin treatment', number: 11 },
-                { id: 12, word: 'DRAIN', row: 6, col: 0, direction: 'down', clue: 'Tube to remove fluid from surgical site', number: 12 }
+                { id: 1, word: 'NPO', row: 2, col: 3, direction: 'across', clue: 'Nothing Per Os - Irish hospitals use this abbreviation', number: 1 },
+                { id: 2, word: 'HSE', row: 4, col: 1, direction: 'across', clue: 'Health Service Executive - Irish health system', number: 3 },
+                { id: 3, word: 'CONSCIOUSNESS', row: 1, col: 4, direction: 'down', clue: 'Glasgow Coma Scale used in Irish A&E units', number: 2 },
+                { id: 4, word: 'NMBI', row: 6, col: 6, direction: 'down', clue: 'Nursing and Midwifery Board of Ireland', number: 4 },
+                { id: 5, word: 'TPR', row: 7, col: 2, direction: 'across', clue: 'Temperature, Pulse, Respiration - basic Irish observations', number: 5 },
+                { id: 6, word: 'MRSA', row: 9, col: 4, direction: 'across', clue: 'Major infection control concern in Irish hospitals', number: 6 },
+                { id: 7, word: 'INSULIN', row: 3, col: 8, direction: 'down', clue: 'Diabetes medication commonly used in Ireland', number: 7 },
+                { id: 8, word: 'WARD', row: 11, col: 5, direction: 'across', clue: 'Hospital unit in Irish public hospitals', number: 8 },
+                { id: 9, word: 'ANAIL', row: 5, col: 11, direction: 'down', clue: 'Irish word for breath/breathing', number: 9 },
+                { id: 10, word: 'PAIN', row: 12, col: 1, direction: 'across', clue: 'Fifth vital sign in Irish nursing practice', number: 10 },
+                { id: 11, word: 'ALTO', row: 0, col: 9, direction: 'down', clue: 'Irish medical card means free treatment', number: 11 },
+                { id: 12, word: 'DRAIN', row: 6, col: 0, direction: 'down', clue: 'Post-surgical tube used in Irish hospitals', number: 12 }
             ],
             
-            // Puzzle Set 2: Medications & Treatments
+            // Puzzle Set 2: Irish Medications & Treatments  
             [
-                { id: 1, word: 'WARFARIN', row: 2, col: 2, direction: 'across', clue: 'Oral anticoagulant medication', number: 1 },
-                { id: 2, word: 'MORPHINE', row: 5, col: 1, direction: 'across', clue: 'Strong opioid pain reliever', number: 3 },
-                { id: 3, word: 'OXYGEN', row: 1, col: 4, direction: 'down', clue: 'Essential gas for patient breathing support', number: 2 },
-                { id: 4, word: 'DIGOXIN', row: 8, col: 3, direction: 'across', clue: 'Heart medication for atrial fibrillation', number: 5 },
-                { id: 5, word: 'SALINE', row: 3, col: 7, direction: 'down', clue: 'Normal sodium chloride solution 0.9%', number: 4 },
-                { id: 6, word: 'LASIX', row: 10, col: 1, direction: 'across', clue: 'Furosemide diuretic medication', number: 6 },
-                { id: 7, word: 'ASPIRIN', row: 0, col: 9, direction: 'down', clue: 'Antiplatelet medication 75mg daily', number: 7 },
-                { id: 8, word: 'STATIN', row: 12, col: 5, direction: 'across', clue: 'Cholesterol-lowering medication class', number: 8 },
-                { id: 9, word: 'CODEINE', row: 6, col: 11, direction: 'down', clue: 'Mild opioid for moderate pain', number: 9 },
-                { id: 10, word: 'STEROID', row: 7, col: 8, direction: 'down', clue: 'Anti-inflammatory medication type', number: 10 },
-                { id: 11, word: 'BETA', row: 4, col: 12, direction: 'down', clue: 'Type of blocker for heart conditions', number: 11 },
-                { id: 12, word: 'GTN', row: 11, col: 10, direction: 'across', clue: 'Glyceryl trinitrate for chest pain', number: 12 }
+                { id: 1, word: 'WARFARIN', row: 2, col: 2, direction: 'across', clue: 'Anticoagulant on Irish formulary', number: 1 },
+                { id: 2, word: 'PARACETAMOL', row: 5, col: 1, direction: 'across', clue: 'Most common painkiller in Irish hospitals', number: 3 },
+                { id: 3, word: 'OXYGEN', row: 1, col: 4, direction: 'down', clue: 'Essential therapy in Irish respiratory wards', number: 2 },
+                { id: 4, word: 'DIGOXIN', row: 8, col: 3, direction: 'across', clue: 'Heart medication monitored in Irish labs', number: 5 },
+                { id: 5, word: 'SALINE', row: 3, col: 7, direction: 'down', clue: 'Normal sodium chloride 0.9% used in Ireland', number: 4 },
+                { id: 6, word: 'FRUSEMIDE', row: 10, col: 1, direction: 'across', clue: 'Diuretic medication (Irish/UK spelling)', number: 6 },
+                { id: 7, word: 'ASPIRIN', row: 0, col: 9, direction: 'down', clue: 'Antiplatelet therapy 75mg in Irish practice', number: 7 },
+                { id: 8, word: 'STATIN', row: 12, col: 5, direction: 'across', clue: 'Cholesterol drug widely prescribed in Ireland', number: 8 },
+                { id: 9, word: 'CODEINE', row: 6, col: 11, direction: 'down', clue: 'Controlled opioid in Irish pharmacy', number: 9 },
+                { id: 10, word: 'PREDNISOLONE', row: 7, col: 8, direction: 'down', clue: 'Steroid commonly used in Irish hospitals', number: 10 },
+                { id: 11, word: 'BETA', row: 4, col: 12, direction: 'down', clue: 'Type of blocker for hypertension in Ireland', number: 11 },
+                { id: 12, word: 'GTN', row: 11, col: 10, direction: 'across', clue: 'Glyceryl trinitrate for angina in Ireland', number: 12 }
             ],
             
-            // Puzzle Set 3: Assessment & Monitoring
+            // Puzzle Set 3: Irish Assessment & Monitoring
             [
-                { id: 1, word: 'SATS', row: 2, col: 3, direction: 'across', clue: 'Oxygen saturation measurement', number: 1 },
-                { id: 2, word: 'AVPU', row: 4, col: 1, direction: 'across', clue: 'Alert Voice Pain Unresponsive scale', number: 3 },
-                { id: 3, word: 'GLASGOW', row: 1, col: 4, direction: 'down', clue: 'Coma scale used in head injuries', number: 2 },
-                { id: 4, word: 'PEWS', row: 6, col: 6, direction: 'down', clue: 'Paediatric Early Warning Score', number: 4 },
-                { id: 5, word: 'NEWS', row: 7, col: 2, direction: 'across', clue: 'National Early Warning Score', number: 5 },
-                { id: 6, word: 'TEMP', row: 9, col: 4, direction: 'across', clue: 'Body temperature measurement', number: 6 },
-                { id: 7, word: 'PULSE', row: 3, col: 8, direction: 'down', clue: 'Heart rate measurement per minute', number: 7 },
-                { id: 8, word: 'BP', row: 11, col: 5, direction: 'across', clue: 'Blood pressure abbreviation', number: 8 },
-                { id: 9, word: 'RR', row: 5, col: 11, direction: 'down', clue: 'Respiratory rate abbreviation', number: 9 },
-                { id: 10, word: 'BMI', row: 12, col: 1, direction: 'across', clue: 'Body Mass Index calculation', number: 10 },
-                { id: 11, word: 'URINE', row: 0, col: 9, direction: 'down', clue: 'Output measured in catheter bags', number: 11 },
-                { id: 12, word: 'CAPILLARY', row: 6, col: 0, direction: 'down', clue: 'Refill time test for circulation', number: 12 }
+                { id: 1, word: 'SATS', row: 2, col: 3, direction: 'across', clue: 'Oxygen saturation monitored in Irish wards', number: 1 },
+                { id: 2, word: 'AVPU', row: 4, col: 1, direction: 'across', clue: 'Consciousness scale used in Irish A&E', number: 3 },
+                { id: 3, word: 'GLASGOW', row: 1, col: 4, direction: 'down', clue: 'Coma scale standard in Irish neurology', number: 2 },
+                { id: 4, word: 'ISBAR', row: 6, col: 6, direction: 'down', clue: 'Irish communication tool for handovers', number: 4 },
+                { id: 5, word: 'NEWS', row: 7, col: 2, direction: 'across', clue: 'Early Warning Score used in Ireland', number: 5 },
+                { id: 6, word: 'TEMP', row: 9, col: 4, direction: 'across', clue: 'Body temperature - essential Irish vital sign', number: 6 },
+                { id: 7, word: 'PULSE', row: 3, col: 8, direction: 'down', clue: 'Heart rate checked every 4 hours in Ireland', number: 7 },
+                { id: 8, word: 'BP', row: 11, col: 5, direction: 'across', clue: 'Blood pressure monitored in Irish practice', number: 8 },
+                { id: 9, word: 'RR', row: 5, col: 11, direction: 'down', clue: 'Respiratory rate - Irish nursing abbreviation', number: 9 },
+                { id: 10, word: 'BMI', row: 12, col: 1, direction: 'across', clue: 'Body Mass Index calculated in Irish clinics', number: 10 },
+                { id: 11, word: 'URINE', row: 0, col: 9, direction: 'down', clue: 'Output monitored in Irish hospitals', number: 11 },
+                { id: 12, word: 'CAPILLARY', row: 6, col: 0, direction: 'down', clue: 'Refill assessed in Irish circulation checks', number: 12 }
             ],
             
-            // Puzzle Set 4: Procedures & Equipment
+            // Puzzle Set 4: Irish Procedures & Equipment
             [
-                { id: 1, word: 'CANNULA', row: 2, col: 2, direction: 'across', clue: 'Intravenous access device', number: 1 },
-                { id: 2, word: 'CATHETER', row: 5, col: 1, direction: 'across', clue: 'Urinary drainage tube', number: 3 },
-                { id: 3, word: 'SYRINGE', row: 1, col: 4, direction: 'down', clue: 'Device for injecting medications', number: 2 },
-                { id: 4, word: 'NEBULISER', row: 8, col: 3, direction: 'across', clue: 'Device for inhaled medications', number: 5 },
-                { id: 5, word: 'STOMA', row: 3, col: 7, direction: 'down', clue: 'Surgically created opening', number: 4 },
-                { id: 6, word: 'TRACH', row: 10, col: 1, direction: 'across', clue: 'Tracheostomy tube abbreviation', number: 6 },
-                { id: 7, word: 'NASOGASTRIC', row: 0, col: 9, direction: 'down', clue: 'NG tube goes through nose to stomach', number: 7 },
-                { id: 8, word: 'DRESSING', row: 12, col: 5, direction: 'across', clue: 'Wound covering material', number: 8 },
-                { id: 9, word: 'SUTURE', row: 6, col: 11, direction: 'down', clue: 'Surgical stitches for wound closure', number: 9 },
-                { id: 10, word: 'MONITOR', row: 7, col: 8, direction: 'down', clue: 'Equipment for continuous observation', number: 10 },
-                { id: 11, word: 'PUMP', row: 4, col: 12, direction: 'down', clue: 'Infusion device for IV fluids', number: 11 },
-                { id: 12, word: 'ECG', row: 11, col: 10, direction: 'across', clue: 'Electrocardiogram heart trace', number: 12 }
+                { id: 1, word: 'CANNULA', row: 2, col: 2, direction: 'across', clue: 'IV access device used in Irish hospitals', number: 1 },
+                { id: 2, word: 'CATHETER', row: 5, col: 1, direction: 'across', clue: 'Urinary tube inserted in Irish wards', number: 3 },
+                { id: 3, word: 'SYRINGE', row: 1, col: 4, direction: 'down', clue: 'Injection device in Irish nursing practice', number: 2 },
+                { id: 4, word: 'NEBULISER', row: 8, col: 3, direction: 'across', clue: 'Respiratory equipment in Irish hospitals', number: 5 },
+                { id: 5, word: 'STOMA', row: 3, col: 7, direction: 'down', clue: 'Surgically created opening - Irish care', number: 4 },
+                { id: 6, word: 'TRACH', row: 10, col: 1, direction: 'across', clue: 'Tracheostomy tube used in Irish ICUs', number: 6 },
+                { id: 7, word: 'NASOGASTRIC', row: 0, col: 9, direction: 'down', clue: 'NG tube feeding method in Irish practice', number: 7 },
+                { id: 8, word: 'DRESSING', row: 12, col: 5, direction: 'across', clue: 'Wound care material in Irish hospitals', number: 8 },
+                { id: 9, word: 'SUTURE', row: 6, col: 11, direction: 'down', clue: 'Surgical stitches used in Irish theatres', number: 9 },
+                { id: 10, word: 'MONITOR', row: 7, col: 8, direction: 'down', clue: 'Patient observation equipment in Ireland', number: 10 },
+                { id: 11, word: 'PUMP', row: 4, col: 12, direction: 'down', clue: 'Infusion device standard in Irish wards', number: 11 },
+                { id: 12, word: 'ECG', row: 11, col: 10, direction: 'across', clue: 'Heart trace recording in Irish cardiology', number: 12 }
             ],
             
-            // Puzzle Set 5: Conditions & Emergencies
+            // Puzzle Set 5: Irish Healthcare Conditions 
             [
-                { id: 1, word: 'STROKE', row: 2, col: 3, direction: 'across', clue: 'Cerebrovascular accident', number: 1 },
-                { id: 2, word: 'SEPSIS', row: 4, col: 1, direction: 'across', clue: 'Life-threatening infection response', number: 3 },
-                { id: 3, word: 'PNEUMONIA', row: 1, col: 4, direction: 'down', clue: 'Lung infection requiring antibiotics', number: 2 },
-                { id: 4, word: 'COPD', row: 6, col: 6, direction: 'down', clue: 'Chronic Obstructive Pulmonary Disease', number: 4 },
-                { id: 5, word: 'DVT', row: 7, col: 2, direction: 'across', clue: 'Deep Vein Thrombosis blood clot', number: 5 },
-                { id: 6, word: 'UTI', row: 9, col: 4, direction: 'across', clue: 'Urinary Tract Infection', number: 6 },
-                { id: 7, word: 'DIABETES', row: 3, col: 8, direction: 'down', clue: 'Blood sugar management condition', number: 7 },
-                { id: 8, word: 'FALLS', row: 11, col: 5, direction: 'across', clue: 'Risk assessment for patient safety', number: 8 },
-                { id: 9, word: 'PRESSURE', row: 5, col: 11, direction: 'down', clue: 'Sore prevention with repositioning', number: 9 },
-                { id: 10, word: 'EMBOLISM', row: 12, col: 1, direction: 'across', clue: 'Pulmonary blockage emergency', number: 10 },
-                { id: 11, word: 'ANGINA', row: 0, col: 9, direction: 'down', clue: 'Chest pain from heart muscle ischemia', number: 11 },
-                { id: 12, word: 'DEMENTIA', row: 6, col: 0, direction: 'down', clue: 'Progressive cognitive impairment', number: 12 }
+                { id: 1, word: 'STROKE', row: 2, col: 3, direction: 'across', clue: 'Major cause of disability in Ireland', number: 1 },
+                { id: 2, word: 'SEPSIS', row: 4, col: 1, direction: 'across', clue: 'Life-threatening infection in Irish ICUs', number: 3 },
+                { id: 3, word: 'PNEUMONIA', row: 1, col: 4, direction: 'down', clue: 'Common respiratory infection in Ireland', number: 2 },
+                { id: 4, word: 'COPD', row: 6, col: 6, direction: 'down', clue: 'Chronic lung disease common in Ireland', number: 4 },
+                { id: 5, word: 'DVT', row: 7, col: 2, direction: 'across', clue: 'Blood clot risk in Irish hospitals', number: 5 },
+                { id: 6, word: 'UTI', row: 9, col: 4, direction: 'across', clue: 'Common infection in Irish elderly care', number: 6 },
+                { id: 7, word: 'DIABETES', row: 3, col: 8, direction: 'down', clue: 'Growing epidemic in Irish population', number: 7 },
+                { id: 8, word: 'FALLS', row: 11, col: 5, direction: 'across', clue: 'Major risk assessment in Irish nursing', number: 8 },
+                { id: 9, word: 'PRESSURE', row: 5, col: 11, direction: 'down', clue: 'Sore prevention priority in Ireland', number: 9 },
+                { id: 10, word: 'EMBOLISM', row: 12, col: 1, direction: 'across', clue: 'Emergency treated in Irish A&E', number: 10 },
+                { id: 11, word: 'ANGINA', row: 0, col: 9, direction: 'down', clue: 'Chest pain managed in Irish cardiology', number: 11 },
+                { id: 12, word: 'DEMENTIA', row: 6, col: 0, direction: 'down', clue: 'Growing concern in Irish healthcare', number: 12 }
             ]
         ];
     }
@@ -561,11 +561,11 @@ class CrosswordGame {
         this.loadPuzzle();
         
         const puzzleNames = [
-            'General Nursing Terms',
-            'Medications & Treatments', 
-            'Assessment & Monitoring',
-            'Procedures & Equipment',
-            'Conditions & Emergencies'
+            'Irish General Nursing Terms',
+            'Irish Medications & Treatments', 
+            'Irish Assessment & Monitoring',
+            'Irish Procedures & Equipment',
+            'Irish Healthcare Conditions'
         ];
         
         this.showFeedback(`New puzzle loaded: ${puzzleNames[this.currentPuzzleIndex]}! 🍀`, 'success');
