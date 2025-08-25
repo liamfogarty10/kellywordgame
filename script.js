@@ -6,6 +6,8 @@ class CrosswordGame {
         this.selectedWord = null;
         this.direction = 'across';
         this.gridSize = 15;
+        this.currentPuzzleIndex = 0;
+        this.puzzleSets = this.createPuzzleSets();
         
         this.init();
         this.loadPuzzle();
@@ -34,119 +36,92 @@ class CrosswordGame {
         }
     }
 
-    loadPuzzle() {
-        // Irish nursing-focused crossword data
-        this.words = [
-            {
-                id: 1,
-                word: 'NBM',
-                row: 2,
-                col: 3,
-                direction: 'across',
-                clue: 'Abbreviation for Nil by Mouth',
-                number: 1
-            },
-            {
-                id: 2,
-                word: 'HEPARIN',
-                row: 4,
-                col: 1,
-                direction: 'across',
-                clue: 'Common anticoagulant medication',
-                number: 3
-            },
-            {
-                id: 3,
-                word: 'CONSCIOUSNESS',
-                row: 1,
-                col: 4,
-                direction: 'down',
-                clue: 'Glasgow Coma Scale assesses this',
-                number: 2
-            },
-            {
-                id: 4,
-                word: 'SOAP',
-                row: 6,
-                col: 6,
-                direction: 'down',
-                clue: 'Hand hygiene acronym (Simple-Ordinary-Antimicrobial-Protective)',
-                number: 4
-            },
-            {
-                id: 5,
-                word: 'TPR',
-                row: 7,
-                col: 2,
-                direction: 'across',
-                clue: 'Temperature, Pulse, Respiration abbreviation',
-                number: 5
-            },
-            {
-                id: 6,
-                word: 'MRSA',
-                row: 9,
-                col: 4,
-                direction: 'across',
-                clue: 'Methicillin-resistant Staphylococcus aureus',
-                number: 6
-            },
-            {
-                id: 7,
-                word: 'INSULIN',
-                row: 3,
-                col: 8,
-                direction: 'down',
-                clue: 'Hormone for blood sugar control',
-                number: 7
-            },
-            {
-                id: 8,
-                word: 'WARD',
-                row: 11,
-                col: 5,
-                direction: 'across',
-                clue: 'Hospital unit where patients stay',
-                number: 8
-            },
-            {
-                id: 9,
-                word: 'CPAP',
-                row: 5,
-                col: 11,
-                direction: 'down',
-                clue: 'Continuous Positive Airway Pressure',
-                number: 9
-            },
-            {
-                id: 10,
-                word: 'PAIN',
-                row: 12,
-                col: 1,
-                direction: 'across',
-                clue: 'Fifth vital sign in nursing assessment',
-                number: 10
-            },
-            {
-                id: 11,
-                word: 'IVIG',
-                row: 0,
-                col: 9,
-                direction: 'down',
-                clue: 'Intravenous immunoglobulin treatment',
-                number: 11
-            },
-            {
-                id: 12,
-                word: 'DRAIN',
-                row: 6,
-                col: 0,
-                direction: 'down',
-                clue: 'Tube to remove fluid from surgical site',
-                number: 12
-            }
+    createPuzzleSets() {
+        return [
+            // Puzzle Set 1: General Nursing Terms
+            [
+                { id: 1, word: 'NBM', row: 2, col: 3, direction: 'across', clue: 'Abbreviation for Nil by Mouth', number: 1 },
+                { id: 2, word: 'HEPARIN', row: 4, col: 1, direction: 'across', clue: 'Common anticoagulant medication', number: 3 },
+                { id: 3, word: 'CONSCIOUSNESS', row: 1, col: 4, direction: 'down', clue: 'Glasgow Coma Scale assesses this', number: 2 },
+                { id: 4, word: 'SOAP', row: 6, col: 6, direction: 'down', clue: 'Hand hygiene acronym', number: 4 },
+                { id: 5, word: 'TPR', row: 7, col: 2, direction: 'across', clue: 'Temperature, Pulse, Respiration abbreviation', number: 5 },
+                { id: 6, word: 'MRSA', row: 9, col: 4, direction: 'across', clue: 'Methicillin-resistant Staphylococcus aureus', number: 6 },
+                { id: 7, word: 'INSULIN', row: 3, col: 8, direction: 'down', clue: 'Hormone for blood sugar control', number: 7 },
+                { id: 8, word: 'WARD', row: 11, col: 5, direction: 'across', clue: 'Hospital unit where patients stay', number: 8 },
+                { id: 9, word: 'CPAP', row: 5, col: 11, direction: 'down', clue: 'Continuous Positive Airway Pressure', number: 9 },
+                { id: 10, word: 'PAIN', row: 12, col: 1, direction: 'across', clue: 'Fifth vital sign in nursing assessment', number: 10 },
+                { id: 11, word: 'IVIG', row: 0, col: 9, direction: 'down', clue: 'Intravenous immunoglobulin treatment', number: 11 },
+                { id: 12, word: 'DRAIN', row: 6, col: 0, direction: 'down', clue: 'Tube to remove fluid from surgical site', number: 12 }
+            ],
+            
+            // Puzzle Set 2: Medications & Treatments
+            [
+                { id: 1, word: 'WARFARIN', row: 2, col: 2, direction: 'across', clue: 'Oral anticoagulant medication', number: 1 },
+                { id: 2, word: 'MORPHINE', row: 5, col: 1, direction: 'across', clue: 'Strong opioid pain reliever', number: 3 },
+                { id: 3, word: 'OXYGEN', row: 1, col: 4, direction: 'down', clue: 'Essential gas for patient breathing support', number: 2 },
+                { id: 4, word: 'DIGOXIN', row: 8, col: 3, direction: 'across', clue: 'Heart medication for atrial fibrillation', number: 5 },
+                { id: 5, word: 'SALINE', row: 3, col: 7, direction: 'down', clue: 'Normal sodium chloride solution 0.9%', number: 4 },
+                { id: 6, word: 'LASIX', row: 10, col: 1, direction: 'across', clue: 'Furosemide diuretic medication', number: 6 },
+                { id: 7, word: 'ASPIRIN', row: 0, col: 9, direction: 'down', clue: 'Antiplatelet medication 75mg daily', number: 7 },
+                { id: 8, word: 'STATIN', row: 12, col: 5, direction: 'across', clue: 'Cholesterol-lowering medication class', number: 8 },
+                { id: 9, word: 'CODEINE', row: 6, col: 11, direction: 'down', clue: 'Mild opioid for moderate pain', number: 9 },
+                { id: 10, word: 'STEROID', row: 7, col: 8, direction: 'down', clue: 'Anti-inflammatory medication type', number: 10 },
+                { id: 11, word: 'BETA', row: 4, col: 12, direction: 'down', clue: 'Type of blocker for heart conditions', number: 11 },
+                { id: 12, word: 'GTN', row: 11, col: 10, direction: 'across', clue: 'Glyceryl trinitrate for chest pain', number: 12 }
+            ],
+            
+            // Puzzle Set 3: Assessment & Monitoring
+            [
+                { id: 1, word: 'SATS', row: 2, col: 3, direction: 'across', clue: 'Oxygen saturation measurement', number: 1 },
+                { id: 2, word: 'AVPU', row: 4, col: 1, direction: 'across', clue: 'Alert Voice Pain Unresponsive scale', number: 3 },
+                { id: 3, word: 'GLASGOW', row: 1, col: 4, direction: 'down', clue: 'Coma scale used in head injuries', number: 2 },
+                { id: 4, word: 'PEWS', row: 6, col: 6, direction: 'down', clue: 'Paediatric Early Warning Score', number: 4 },
+                { id: 5, word: 'NEWS', row: 7, col: 2, direction: 'across', clue: 'National Early Warning Score', number: 5 },
+                { id: 6, word: 'TEMP', row: 9, col: 4, direction: 'across', clue: 'Body temperature measurement', number: 6 },
+                { id: 7, word: 'PULSE', row: 3, col: 8, direction: 'down', clue: 'Heart rate measurement per minute', number: 7 },
+                { id: 8, word: 'BP', row: 11, col: 5, direction: 'across', clue: 'Blood pressure abbreviation', number: 8 },
+                { id: 9, word: 'RR', row: 5, col: 11, direction: 'down', clue: 'Respiratory rate abbreviation', number: 9 },
+                { id: 10, word: 'BMI', row: 12, col: 1, direction: 'across', clue: 'Body Mass Index calculation', number: 10 },
+                { id: 11, word: 'URINE', row: 0, col: 9, direction: 'down', clue: 'Output measured in catheter bags', number: 11 },
+                { id: 12, word: 'CAPILLARY', row: 6, col: 0, direction: 'down', clue: 'Refill time test for circulation', number: 12 }
+            ],
+            
+            // Puzzle Set 4: Procedures & Equipment
+            [
+                { id: 1, word: 'CANNULA', row: 2, col: 2, direction: 'across', clue: 'Intravenous access device', number: 1 },
+                { id: 2, word: 'CATHETER', row: 5, col: 1, direction: 'across', clue: 'Urinary drainage tube', number: 3 },
+                { id: 3, word: 'SYRINGE', row: 1, col: 4, direction: 'down', clue: 'Device for injecting medications', number: 2 },
+                { id: 4, word: 'NEBULISER', row: 8, col: 3, direction: 'across', clue: 'Device for inhaled medications', number: 5 },
+                { id: 5, word: 'STOMA', row: 3, col: 7, direction: 'down', clue: 'Surgically created opening', number: 4 },
+                { id: 6, word: 'TRACH', row: 10, col: 1, direction: 'across', clue: 'Tracheostomy tube abbreviation', number: 6 },
+                { id: 7, word: 'NASOGASTRIC', row: 0, col: 9, direction: 'down', clue: 'NG tube goes through nose to stomach', number: 7 },
+                { id: 8, word: 'DRESSING', row: 12, col: 5, direction: 'across', clue: 'Wound covering material', number: 8 },
+                { id: 9, word: 'SUTURE', row: 6, col: 11, direction: 'down', clue: 'Surgical stitches for wound closure', number: 9 },
+                { id: 10, word: 'MONITOR', row: 7, col: 8, direction: 'down', clue: 'Equipment for continuous observation', number: 10 },
+                { id: 11, word: 'PUMP', row: 4, col: 12, direction: 'down', clue: 'Infusion device for IV fluids', number: 11 },
+                { id: 12, word: 'ECG', row: 11, col: 10, direction: 'across', clue: 'Electrocardiogram heart trace', number: 12 }
+            ],
+            
+            // Puzzle Set 5: Conditions & Emergencies
+            [
+                { id: 1, word: 'STROKE', row: 2, col: 3, direction: 'across', clue: 'Cerebrovascular accident', number: 1 },
+                { id: 2, word: 'SEPSIS', row: 4, col: 1, direction: 'across', clue: 'Life-threatening infection response', number: 3 },
+                { id: 3, word: 'PNEUMONIA', row: 1, col: 4, direction: 'down', clue: 'Lung infection requiring antibiotics', number: 2 },
+                { id: 4, word: 'COPD', row: 6, col: 6, direction: 'down', clue: 'Chronic Obstructive Pulmonary Disease', number: 4 },
+                { id: 5, word: 'DVT', row: 7, col: 2, direction: 'across', clue: 'Deep Vein Thrombosis blood clot', number: 5 },
+                { id: 6, word: 'UTI', row: 9, col: 4, direction: 'across', clue: 'Urinary Tract Infection', number: 6 },
+                { id: 7, word: 'DIABETES', row: 3, col: 8, direction: 'down', clue: 'Blood sugar management condition', number: 7 },
+                { id: 8, word: 'FALLS', row: 11, col: 5, direction: 'across', clue: 'Risk assessment for patient safety', number: 8 },
+                { id: 9, word: 'PRESSURE', row: 5, col: 11, direction: 'down', clue: 'Sore prevention with repositioning', number: 9 },
+                { id: 10, word: 'EMBOLISM', row: 12, col: 1, direction: 'across', clue: 'Pulmonary blockage emergency', number: 10 },
+                { id: 11, word: 'ANGINA', row: 0, col: 9, direction: 'down', clue: 'Chest pain from heart muscle ischemia', number: 11 },
+                { id: 12, word: 'DEMENTIA', row: 6, col: 0, direction: 'down', clue: 'Progressive cognitive impairment', number: 12 }
+            ]
         ];
+    }
 
+    loadPuzzle() {
+        this.words = this.puzzleSets[this.currentPuzzleIndex];
         this.placeWords();
         this.renderGrid();
         this.renderClues();
@@ -566,16 +541,34 @@ class CrosswordGame {
     }
 
     newGame() {
+        // Select a random puzzle set
+        this.currentPuzzleIndex = Math.floor(Math.random() * this.puzzleSets.length);
+        
+        // Clear the current game state
         this.clearGrid();
         this.selectedCell = null;
         this.selectedWord = null;
+        
+        // Remove all visual selections
         document.querySelectorAll('.cell').forEach(c => {
             c.classList.remove('selected', 'word-selected');
         });
         document.querySelectorAll('.clue').forEach(c => {
             c.classList.remove('selected');
         });
-        this.showFeedback('New game started! Good luck with your nursing knowledge! 🍀', 'success');
+        
+        // Load the new puzzle
+        this.loadPuzzle();
+        
+        const puzzleNames = [
+            'General Nursing Terms',
+            'Medications & Treatments', 
+            'Assessment & Monitoring',
+            'Procedures & Equipment',
+            'Conditions & Emergencies'
+        ];
+        
+        this.showFeedback(`New puzzle loaded: ${puzzleNames[this.currentPuzzleIndex]}! 🍀`, 'success');
     }
 
     showFeedback(message, type) {
