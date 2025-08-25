@@ -48,3 +48,96 @@ An interactive crossword game focused on Irish general nursing practice. Test yo
 Perfect for nursing students, healthcare professionals, and anyone interested in Irish medical terminology! 🍀
 
 *Study well and good luck with your nursing knowledge!*
+
+---
+
+## 🛠️ Developer Instructions
+
+### Adding New Words & Puzzle Sets
+
+To add new crossword puzzles, edit the `script.js` file:
+
+1. **Add New Puzzle Set:**
+   ```javascript
+   // In the createPuzzleSets() method, add a new array:
+   [
+       { id: 1, word: 'WORD', row: 2, col: 3, direction: 'across', clue: 'Your clue here', number: 1 },
+       // ... add 12 words total per set
+   ]
+   ```
+
+2. **Word Object Format:**
+   - `id`: Unique number (1-12 per set)
+   - `word`: Answer in UPPERCASE
+   - `row`: Grid row (0-14)
+   - `col`: Grid column (0-14)  
+   - `direction`: 'across' or 'down'
+   - `clue`: Descriptive clue text
+   - `number`: Clue number for display
+
+3. **Update Puzzle Names:**
+   ```javascript
+   // In the newGame() method, add your new puzzle name:
+   const puzzleNames = [
+       'Irish General Nursing Terms',
+       // ... existing names
+       'Your New Puzzle Name'  // Add here
+   ];
+   ```
+
+### Irish Nursing Guidelines
+
+**✅ Use Irish/UK terminology:**
+- PARACETAMOL (not Acetaminophen)
+- ADRENALINE (not Epinephrine) 
+- FRUSEMIDE (not Furosemide)
+- THEATRE (not Operating Room)
+- TROLLEY (not Gurney)
+- A&E (not ER)
+- MILLILITRE (not Milliliter)
+
+**✅ Include Irish healthcare references:**
+- HSE (Health Service Executive)
+- NMBI (Nursing and Midwifery Board of Ireland)
+- HIQA (Health Information and Quality Authority)
+- Irish hospitals, wards, practices
+
+### Git Commands for Updates
+
+```bash
+# Check status
+git status
+
+# Add changes
+git add .
+
+# Commit with message
+git commit -m "Add new puzzle set: [description]
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+
+# Push to GitHub
+git push origin main
+```
+
+### GitHub Pages Deployment
+
+GitHub Pages automatically deploys from the `main` branch. Changes appear live within 2-5 minutes at:
+**https://liamfogarty10.github.io/kellywordgame/**
+
+### Testing Changes
+
+```bash
+# Test locally with Python server
+python3 -m http.server 8080
+
+# Check JavaScript syntax
+node -c script.js
+```
+
+### Current Game Statistics
+- **10 Puzzle Sets** with 120 total Irish nursing terms
+- **Responsive design** for mobile and desktop  
+- **Pure HTML/CSS/JavaScript** - no external dependencies
