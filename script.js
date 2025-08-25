@@ -116,6 +116,86 @@ class CrosswordGame {
                 { id: 10, word: 'EMBOLISM', row: 12, col: 1, direction: 'across', clue: 'Emergency treated in Irish A&E', number: 10 },
                 { id: 11, word: 'ANGINA', row: 0, col: 9, direction: 'down', clue: 'Chest pain managed in Irish cardiology', number: 11 },
                 { id: 12, word: 'DEMENTIA', row: 6, col: 0, direction: 'down', clue: 'Growing concern in Irish healthcare', number: 12 }
+            ],
+
+            // Puzzle Set 6: Irish Nursing Specialties
+            [
+                { id: 1, word: 'MIDWIFERY', row: 2, col: 2, direction: 'across', clue: 'Maternity care specialty regulated by NMBI', number: 1 },
+                { id: 2, word: 'THEATRE', row: 5, col: 1, direction: 'across', clue: 'Operating department in Irish hospitals', number: 3 },
+                { id: 3, word: 'ONCOLOGY', row: 1, col: 4, direction: 'down', clue: 'Cancer care specialty in Irish hospitals', number: 2 },
+                { id: 4, word: 'GERIATRIC', row: 8, col: 3, direction: 'across', clue: 'Elderly care nursing in Ireland', number: 5 },
+                { id: 5, word: 'PAEDIATRIC', row: 3, col: 7, direction: 'down', clue: 'Children\'s nursing in Irish hospitals', number: 4 },
+                { id: 6, word: 'MENTAL', row: 10, col: 1, direction: 'across', clue: 'Health nursing specialty in Ireland', number: 6 },
+                { id: 7, word: 'CORONARY', row: 0, col: 9, direction: 'down', clue: 'Care unit for heart patients in Ireland', number: 7 },
+                { id: 8, word: 'DIALYSIS', row: 12, col: 5, direction: 'across', clue: 'Renal treatment in Irish nephrology units', number: 8 },
+                { id: 9, word: 'HOSPICE', row: 6, col: 11, direction: 'down', clue: 'Palliative care service in Ireland', number: 9 },
+                { id: 10, word: 'RECOVERY', row: 7, col: 8, direction: 'down', clue: 'Post-anaesthetic unit in Irish theatres', number: 10 },
+                { id: 11, word: 'REHAB', row: 4, col: 12, direction: 'down', clue: 'Rehabilitation nursing in Ireland', number: 11 },
+                { id: 12, word: 'ICU', row: 11, col: 10, direction: 'across', clue: 'Intensive Care Unit in Irish hospitals', number: 12 }
+            ],
+
+            // Puzzle Set 7: Irish Healthcare System Terms
+            [
+                { id: 1, word: 'HIQA', row: 2, col: 3, direction: 'across', clue: 'Health Information and Quality Authority', number: 1 },
+                { id: 2, word: 'PCRS', row: 4, col: 1, direction: 'across', clue: 'Primary Care Reimbursement Service', number: 3 },
+                { id: 3, word: 'COMMUNITY', row: 1, col: 4, direction: 'down', clue: 'Health nurses work in Irish communities', number: 2 },
+                { id: 4, word: 'CLINIC', row: 6, col: 6, direction: 'down', clue: 'Outpatient facility in Irish healthcare', number: 4 },
+                { id: 5, word: 'DML', row: 7, col: 2, direction: 'across', clue: 'Dublin Midlands Louth hospital group', number: 5 },
+                { id: 6, word: 'SAOLTA', row: 9, col: 4, direction: 'across', clue: 'University Health Care Group', number: 6 },
+                { id: 7, word: 'TRUSTEE', row: 3, col: 8, direction: 'down', clue: 'Board member of Irish hospital', number: 7 },
+                { id: 8, word: 'PHN', row: 11, col: 5, direction: 'across', clue: 'Public Health Nurse in Ireland', number: 8 },
+                { id: 9, word: 'CPN', row: 5, col: 11, direction: 'down', clue: 'Community Psychiatric Nurse', number: 9 },
+                { id: 10, word: 'MANAGER', row: 12, col: 1, direction: 'across', clue: 'Director of Nursing in Irish hospitals', number: 10 },
+                { id: 11, word: 'RCSI', row: 0, col: 9, direction: 'down', clue: 'Royal College of Surgeons Ireland', number: 11 },
+                { id: 12, word: 'ACUTE', row: 6, col: 0, direction: 'down', clue: 'Type of hospital care in Ireland', number: 12 }
+            ],
+
+            // Puzzle Set 8: Irish Nursing Documentation
+            [
+                { id: 1, word: 'KARDEX', row: 2, col: 2, direction: 'across', clue: 'Patient care planning system in Ireland', number: 1 },
+                { id: 2, word: 'INCIDENT', row: 5, col: 1, direction: 'across', clue: 'Report form for accidents in Irish hospitals', number: 3 },
+                { id: 3, word: 'CONSENT', row: 1, col: 4, direction: 'down', clue: 'Patient agreement form in Irish healthcare', number: 2 },
+                { id: 4, word: 'DISCHARGE', row: 8, col: 3, direction: 'across', clue: 'Planning summary in Irish nursing', number: 5 },
+                { id: 5, word: 'NURSING', row: 3, col: 7, direction: 'down', clue: 'Care plan documentation in Ireland', number: 4 },
+                { id: 6, word: 'CHART', row: 10, col: 1, direction: 'across', clue: 'Patient record system in Irish wards', number: 6 },
+                { id: 7, word: 'HANDOVER', row: 0, col: 9, direction: 'down', clue: 'Shift report between Irish nurses', number: 7 },
+                { id: 8, word: 'RISK', row: 12, col: 5, direction: 'across', clue: 'Assessment form for patient safety in Ireland', number: 8 },
+                { id: 9, word: 'NOTES', row: 6, col: 11, direction: 'down', clue: 'Progress documentation in Irish nursing', number: 9 },
+                { id: 10, word: 'DRUG', row: 7, col: 8, direction: 'down', clue: 'Medication administration chart in Ireland', number: 10 },
+                { id: 11, word: 'FLUID', row: 4, col: 12, direction: 'down', clue: 'Balance chart monitoring in Irish practice', number: 11 },
+                { id: 12, word: 'TPR', row: 11, col: 10, direction: 'across', clue: 'Vital signs chart abbreviation', number: 12 }
+            ],
+
+            // Puzzle Set 9: Irish Pharmacology & Dosages
+            [
+                { id: 1, word: 'MILLILITRE', row: 2, col: 1, direction: 'across', clue: 'Volume measurement used in Irish nursing', number: 1 },
+                { id: 2, word: 'MICROGRAM', row: 5, col: 2, direction: 'across', clue: 'Small dose measurement in Irish practice', number: 3 },
+                { id: 3, word: 'SUBLINGUAL', row: 1, col: 4, direction: 'down', clue: 'Under tongue route in Irish pharmacology', number: 2 },
+                { id: 4, word: 'TOPICAL', row: 8, col: 3, direction: 'across', clue: 'Skin application route in Ireland', number: 5 },
+                { id: 5, word: 'INTRAMUSCULAR', row: 3, col: 6, direction: 'down', clue: 'IM injection route in Irish practice', number: 4 },
+                { id: 6, word: 'ORAL', row: 10, col: 1, direction: 'across', clue: 'By mouth medication route in Ireland', number: 6 },
+                { id: 7, word: 'SUPPOSITORY', row: 0, col: 9, direction: 'down', clue: 'Rectal medication form in Irish nursing', number: 7 },
+                { id: 8, word: 'NEBULISER', row: 12, col: 4, direction: 'across', clue: 'Inhalation device in Irish respiratory care', number: 8 },
+                { id: 9, word: 'PATCH', row: 6, col: 11, direction: 'down', clue: 'Transdermal medication in Irish practice', number: 9 },
+                { id: 10, word: 'BOLUS', row: 7, col: 8, direction: 'down', clue: 'Single large dose in Irish IV therapy', number: 10 },
+                { id: 11, word: 'PRN', row: 4, col: 12, direction: 'down', clue: 'As required dosing in Irish prescriptions', number: 11 },
+                { id: 12, word: 'BD', row: 11, col: 10, direction: 'across', clue: 'Twice daily dosing in Irish practice', number: 12 }
+            ],
+
+            // Puzzle Set 10: Irish Emergency & Critical Care
+            [
+                { id: 1, word: 'TROLLEY', row: 2, col: 2, direction: 'across', clue: 'Emergency equipment in Irish hospitals', number: 1 },
+                { id: 2, word: 'DEFIB', row: 5, col: 1, direction: 'across', clue: 'Defibrillator used in Irish cardiac arrest', number: 3 },
+                { id: 3, word: 'INTUBATION', row: 1, col: 4, direction: 'down', clue: 'Airway procedure in Irish emergency care', number: 2 },
+                { id: 4, word: 'ADRENALINE', row: 8, col: 2, direction: 'across', clue: 'Emergency drug for anaphylaxis in Ireland', number: 5 },
+                { id: 5, word: 'ARREST', row: 3, col: 7, direction: 'down', clue: 'Cardiac emergency in Irish hospitals', number: 4 },
+                { id: 6, word: 'VENTILATOR', row: 10, col: 1, direction: 'across', clue: 'Breathing support in Irish ICU', number: 6 },
+                { id: 7, word: 'TRAUMA', row: 0, col: 9, direction: 'down', clue: 'Serious injury care in Irish A&E', number: 7 },
+                { id: 8, word: 'TRIAGE', row: 12, col: 5, direction: 'across', clue: 'Priority assessment in Irish emergency departments', number: 8 },
+                { id: 9, word: 'SHOCK', row: 6, col: 11, direction: 'down', clue: 'Critical condition treated in Irish ICU', number: 9 },
+                { id: 10, word: 'RESUS', row: 7, col: 8, direction: 'down', clue: 'Resuscitation room in Irish A&E', number: 10 },
+                { id: 11, word: 'CRASH', row: 4, col: 12, direction: 'down', clue: 'Call team for emergency in Irish hospitals', number: 11 },
+                { id: 12, word: 'CPR', row: 11, col: 10, direction: 'across', clue: 'Cardiopulmonary resuscitation in Ireland', number: 12 }
             ]
         ];
     }
@@ -565,7 +645,12 @@ class CrosswordGame {
             'Irish Medications & Treatments', 
             'Irish Assessment & Monitoring',
             'Irish Procedures & Equipment',
-            'Irish Healthcare Conditions'
+            'Irish Healthcare Conditions',
+            'Irish Nursing Specialties',
+            'Irish Healthcare System Terms',
+            'Irish Nursing Documentation',
+            'Irish Pharmacology & Dosages',
+            'Irish Emergency & Critical Care'
         ];
         
         this.showFeedback(`New puzzle loaded: ${puzzleNames[this.currentPuzzleIndex]}! 🍀`, 'success');
