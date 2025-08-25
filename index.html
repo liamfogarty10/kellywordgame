@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Nursing Crossword Game 🩺</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🩺 Irish Nursing Crossword</h1>
+            <p>Test your knowledge of nursing terms, abbreviations, and medications!</p>
+        </header>
+
+        <div class="game-area">
+            <div class="crossword-container">
+                <div id="crossword-grid" class="crossword-grid"></div>
+            </div>
+
+            <div class="clues-container">
+                <div class="clues-section">
+                    <h3>Across</h3>
+                    <div id="across-clues" class="clues-list"></div>
+                </div>
+                
+                <div class="clues-section">
+                    <h3>Down</h3>
+                    <div id="down-clues" class="clues-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="check-answers" class="btn btn-primary">Check Answers</button>
+            <button id="reveal-word" class="btn btn-secondary">Reveal Selected Word</button>
+            <button id="clear-grid" class="btn btn-warning">Clear Grid</button>
+            <button id="new-game" class="btn btn-success">New Game</button>
+        </div>
+
+        <div id="feedback" class="feedback"></div>
+
+        <footer>
+            <p>Created for Irish nursing practice • Study well! 🍀</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
